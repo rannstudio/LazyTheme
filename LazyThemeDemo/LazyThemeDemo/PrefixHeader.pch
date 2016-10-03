@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  LazyThemeDemo
+//
+//  Created by Hanran Liu on 2016/9/23.
+//  Copyright © 2016年 rannie. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "LazyTheme.h"
+#import "Macro.h"
+
+#endif /* PrefixHeader_pch */
