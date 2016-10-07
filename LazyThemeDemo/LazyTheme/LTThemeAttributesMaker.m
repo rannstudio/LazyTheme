@@ -55,6 +55,11 @@
         if (self.titleSelectColor) {
             [button setTitleColor:self.titleSelectColor forState:UIControlStateSelected];
         }
+    } else if ([themeView isKindOfClass:[UINavigationBar class]]) {
+        UINavigationBar *bar = (UINavigationBar *)themeView;
+        if (self.barTintColor) {
+            bar.barTintColor = self.barTintColor;
+        }
     }
 }
 

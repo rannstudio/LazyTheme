@@ -19,6 +19,8 @@
 		996123191DA2505500C24DDC /* UIApplication+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 996123111DA2505500C24DDC /* UIApplication+LazyTheme.m */; };
 		9961231A1DA2505500C24DDC /* UIView+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 996123131DA2505500C24DDC /* UIView+LazyTheme.m */; };
 		9961231B1DA2505500C24DDC /* UIViewController+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 996123151DA2505500C24DDC /* UIViewController+LazyTheme.m */; };
+		9961231E1DA2523A00C24DDC /* AppDelegate+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961231D1DA2523A00C24DDC /* AppDelegate+LazyTheme.m */; };
+		99D903301DA775C60099BBBB /* LTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D9032F1DA775C60099BBBB /* LTRuntime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		996123131DA2505500C24DDC /* UIView+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LazyTheme.m"; sourceTree = "<group>"; };
 		996123141DA2505500C24DDC /* UIViewController+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LazyTheme.h"; sourceTree = "<group>"; };
 		996123151DA2505500C24DDC /* UIViewController+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LazyTheme.m"; sourceTree = "<group>"; };
+		9961231C1DA2523A00C24DDC /* AppDelegate+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LazyTheme.h"; sourceTree = "<group>"; };
+		9961231D1DA2523A00C24DDC /* AppDelegate+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LazyTheme.m"; sourceTree = "<group>"; };
+		99D9032E1DA775C60099BBBB /* LTRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRuntime.h; sourceTree = "<group>"; };
+		99D9032F1DA775C60099BBBB /* LTRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRuntime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 			children = (
 				996123081DA2505500C24DDC /* LazyTheme.h */,
 				996123091DA2505500C24DDC /* LTDefs.h */,
+				99D9032E1DA775C60099BBBB /* LTRuntime.h */,
+				99D9032F1DA775C60099BBBB /* LTRuntime.m */,
 				9961230A1DA2505500C24DDC /* LTTheme.h */,
 				9961230B1DA2505500C24DDC /* LTTheme.m */,
 				9961230C1DA2505500C24DDC /* LTThemeAttributesMaker.h */,
@@ -121,6 +129,8 @@
 				996123131DA2505500C24DDC /* UIView+LazyTheme.m */,
 				996123141DA2505500C24DDC /* UIViewController+LazyTheme.h */,
 				996123151DA2505500C24DDC /* UIViewController+LazyTheme.m */,
+				9961231C1DA2523A00C24DDC /* AppDelegate+LazyTheme.h */,
+				9961231D1DA2523A00C24DDC /* AppDelegate+LazyTheme.m */,
 			);
 			path = LazyTheme;
 			sourceTree = "<group>";
@@ -199,6 +209,8 @@
 			files = (
 				994C45A11D90E58C00606260 /* ViewController.m in Sources */,
 				996123181DA2505500C24DDC /* LTThemeManager.m in Sources */,
+				99D903301DA775C60099BBBB /* LTRuntime.m in Sources */,
+				9961231E1DA2523A00C24DDC /* AppDelegate+LazyTheme.m in Sources */,
 				9961231B1DA2505500C24DDC /* UIViewController+LazyTheme.m in Sources */,
 				996123191DA2505500C24DDC /* UIApplication+LazyTheme.m in Sources */,
 				996123171DA2505500C24DDC /* LTThemeAttributesMaker.m in Sources */,

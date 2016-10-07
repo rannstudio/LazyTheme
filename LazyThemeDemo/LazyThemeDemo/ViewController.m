@@ -17,8 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Lazy Theme";
     [self.view lt_makeThemeAttributes:^(LTTheme *theme, LTThemeAttributesMaker *maker) {
         maker.backgroundColor = COLOR_WITH_HEX(theme.globalBackgroundColor);
+    }];
+    [self.navigationController.navigationBar lt_makeThemeAttributes:^(LTTheme *theme, LTThemeAttributesMaker *maker) {
+        maker.barTintColor = COLOR_WITH_HEX(theme.globalThemeColor);
+        maker.tintColor = COLOR_WITH_HEX(theme.globalBackgroundColor);
     }];
     
     CGPoint center = self.view.center;

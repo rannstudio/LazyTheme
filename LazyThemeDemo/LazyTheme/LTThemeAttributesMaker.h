@@ -23,6 +23,8 @@
 @property (nonatomic, strong) UIColor *titleDisableColor;
 @property (nonatomic, strong) UIColor *titleSelectColor;
 @property (nonatomic, strong) UIFont  *titleFont;
+// Navi Bar
+@property (nonatomic, strong) UIColor *barTintColor;
 
 - (instancetype)initWithView:(UIView *)view;
 

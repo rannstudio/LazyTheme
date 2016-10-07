@@ -16,25 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self setupTheme];
     return YES;
-}
-
-- (void)setupTheme {
-    LTTheme *theme = [[LTTheme alloc] init];
-    theme.themeName = @"Green";
-    theme.globalBackgroundColor = 0xF5F5F9;
-    theme.globalThemeColor = 0x29AB91;
-    
-    LTTheme *theme_orange = [[LTTheme alloc] init];
-    theme_orange.themeName = @"Orange";
-    theme_orange.globalBackgroundColor = 0xF5F5F9;
-    theme_orange.globalThemeColor = 0xFFB415;
-    [[LTThemeManager sharedManager] setupThemes:@[theme, theme_orange]];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[LTThemeManager sharedManager] applyTheme:theme_orange];
-    });
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
