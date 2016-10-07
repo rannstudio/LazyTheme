@@ -7,26 +7,14 @@
 //
 
 #import "UIViewController+LazyTheme.h"
-#import <objc/runtime.h>
 #import "LTTheme.h"
 #import "LTThemeManager.h"
 #import "UIView+LazyTheme.h"
 #import "UIApplication+LazyTheme.h"
+#import "LTDefs.h"
+#import "LTRuntime.h"
 
 static void * kLTCurrentThemeKey = &kLTCurrentThemeKey;
-
-void lt_swizzleMethod(Class class, SEL origSel, SEL newSel) {
-    Method oriMethod = class_getInstanceMethod(class, origSel);
-    Method newMethod = class_getInstanceMethod(class, newSel);
-    
-    BOOL didAddMethod = class_addMethod(class, origSel, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
-    if (didAddMethod) {
-        class_replaceMethod(class, newSel, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
-    } else {
-        method_exchangeImplementations(oriMethod, newMethod);
-    }
-}
-
 
 @implementation UIViewController (LazyTheme)
 
@@ -74,21 +62,7 @@ void lt_swizzleMethod(Class class, SEL origSel, SEL newSel) {
         return;
     }
     
-    UIView *modView = nil;
-    if ([self isKindOfClass:UINavigationController.class])
-    {
-        UINavigationController *naviVC = (UINavigationController *)self;
-        modView = naviVC.navigationBar;
-    }
-    else if ([self isKindOfClass:UITabBarController.class])
-    {
-        UITabBarController *tabbarVC = (UITabBarController *)self;
-        modView = tabbarVC.tabBar;
-    }
-    else
-    {
-        modView = self.view;
-    }
+    UIView *modView = self.view;
     
     [self lt_enumerateSubviews:modView usingBlock:^(UIView *subview) {
         if (subview.isLazyThemeComponent) {
@@ -96,12 +70,8 @@ void lt_swizzleMethod(Class class, SEL origSel, SEL newSel) {
         }
     }];
     
-    if (self.navigationController) {
-        [self.navigationController lt_modifyTheme];
-    }
-    if (self.tabBarController) {
-        [self.tabBarController lt_modifyTheme];
-    }
+    if (self.navigationController) [self.navigationController lt_modifyTheme];
+    if (self.tabBarController) [self.tabBarController lt_modifyTheme];
     
     self.lt_currentTheme = currentTheme;
 }

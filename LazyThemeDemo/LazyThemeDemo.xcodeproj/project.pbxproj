@@ -13,14 +13,14 @@
 		994C45A41D90E58C00606260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994C45A21D90E58C00606260 /* Main.storyboard */; };
 		994C45A61D90E58C00606260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994C45A51D90E58C00606260 /* Assets.xcassets */; };
 		994C45A91D90E58C00606260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994C45A71D90E58C00606260 /* LaunchScreen.storyboard */; };
-		996123161DA2505500C24DDC /* LTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961230B1DA2505500C24DDC /* LTTheme.m */; };
-		996123171DA2505500C24DDC /* LTThemeAttributesMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961230D1DA2505500C24DDC /* LTThemeAttributesMaker.m */; };
-		996123181DA2505500C24DDC /* LTThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961230F1DA2505500C24DDC /* LTThemeManager.m */; };
-		996123191DA2505500C24DDC /* UIApplication+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 996123111DA2505500C24DDC /* UIApplication+LazyTheme.m */; };
-		9961231A1DA2505500C24DDC /* UIView+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 996123131DA2505500C24DDC /* UIView+LazyTheme.m */; };
-		9961231B1DA2505500C24DDC /* UIViewController+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 996123151DA2505500C24DDC /* UIViewController+LazyTheme.m */; };
-		9961231E1DA2523A00C24DDC /* AppDelegate+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9961231D1DA2523A00C24DDC /* AppDelegate+LazyTheme.m */; };
-		99D903301DA775C60099BBBB /* LTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D9032F1DA775C60099BBBB /* LTRuntime.m */; };
+		99D903441DA77CED0099BBBB /* AppDelegate+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D903331DA77CED0099BBBB /* AppDelegate+LazyTheme.m */; };
+		99D903451DA77CED0099BBBB /* LTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D903371DA77CED0099BBBB /* LTRuntime.m */; };
+		99D903461DA77CED0099BBBB /* LTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D903391DA77CED0099BBBB /* LTTheme.m */; };
+		99D903471DA77CED0099BBBB /* LTThemeAttributesMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D9033B1DA77CED0099BBBB /* LTThemeAttributesMaker.m */; };
+		99D903481DA77CED0099BBBB /* LTThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D9033D1DA77CED0099BBBB /* LTThemeManager.m */; };
+		99D903491DA77CED0099BBBB /* UIApplication+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D9033F1DA77CED0099BBBB /* UIApplication+LazyTheme.m */; };
+		99D9034A1DA77CED0099BBBB /* UIView+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D903411DA77CED0099BBBB /* UIView+LazyTheme.m */; };
+		99D9034B1DA77CED0099BBBB /* UIViewController+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D903431DA77CED0099BBBB /* UIViewController+LazyTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,24 +36,24 @@
 		994C45AA1D90E58C00606260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99533ADF1D957FD70011E67A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		99533AE21D95810A0011E67A /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		996123081DA2505500C24DDC /* LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyTheme.h; sourceTree = "<group>"; };
-		996123091DA2505500C24DDC /* LTDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDefs.h; sourceTree = "<group>"; };
-		9961230A1DA2505500C24DDC /* LTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTheme.h; sourceTree = "<group>"; };
-		9961230B1DA2505500C24DDC /* LTTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTheme.m; sourceTree = "<group>"; };
-		9961230C1DA2505500C24DDC /* LTThemeAttributesMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTThemeAttributesMaker.h; sourceTree = "<group>"; };
-		9961230D1DA2505500C24DDC /* LTThemeAttributesMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTThemeAttributesMaker.m; sourceTree = "<group>"; };
-		9961230E1DA2505500C24DDC /* LTThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTThemeManager.h; sourceTree = "<group>"; };
-		9961230F1DA2505500C24DDC /* LTThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTThemeManager.m; sourceTree = "<group>"; };
-		996123101DA2505500C24DDC /* UIApplication+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LazyTheme.h"; sourceTree = "<group>"; };
-		996123111DA2505500C24DDC /* UIApplication+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LazyTheme.m"; sourceTree = "<group>"; };
-		996123121DA2505500C24DDC /* UIView+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LazyTheme.h"; sourceTree = "<group>"; };
-		996123131DA2505500C24DDC /* UIView+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LazyTheme.m"; sourceTree = "<group>"; };
-		996123141DA2505500C24DDC /* UIViewController+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LazyTheme.h"; sourceTree = "<group>"; };
-		996123151DA2505500C24DDC /* UIViewController+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LazyTheme.m"; sourceTree = "<group>"; };
-		9961231C1DA2523A00C24DDC /* AppDelegate+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LazyTheme.h"; sourceTree = "<group>"; };
-		9961231D1DA2523A00C24DDC /* AppDelegate+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LazyTheme.m"; sourceTree = "<group>"; };
-		99D9032E1DA775C60099BBBB /* LTRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRuntime.h; sourceTree = "<group>"; };
-		99D9032F1DA775C60099BBBB /* LTRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRuntime.m; sourceTree = "<group>"; };
+		99D903321DA77CED0099BBBB /* AppDelegate+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LazyTheme.h"; sourceTree = "<group>"; };
+		99D903331DA77CED0099BBBB /* AppDelegate+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LazyTheme.m"; sourceTree = "<group>"; };
+		99D903341DA77CED0099BBBB /* LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyTheme.h; sourceTree = "<group>"; };
+		99D903351DA77CED0099BBBB /* LTDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDefs.h; sourceTree = "<group>"; };
+		99D903361DA77CED0099BBBB /* LTRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRuntime.h; sourceTree = "<group>"; };
+		99D903371DA77CED0099BBBB /* LTRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRuntime.m; sourceTree = "<group>"; };
+		99D903381DA77CED0099BBBB /* LTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTheme.h; sourceTree = "<group>"; };
+		99D903391DA77CED0099BBBB /* LTTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTheme.m; sourceTree = "<group>"; };
+		99D9033A1DA77CED0099BBBB /* LTThemeAttributesMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTThemeAttributesMaker.h; sourceTree = "<group>"; };
+		99D9033B1DA77CED0099BBBB /* LTThemeAttributesMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTThemeAttributesMaker.m; sourceTree = "<group>"; };
+		99D9033C1DA77CED0099BBBB /* LTThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTThemeManager.h; sourceTree = "<group>"; };
+		99D9033D1DA77CED0099BBBB /* LTThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTThemeManager.m; sourceTree = "<group>"; };
+		99D9033E1DA77CED0099BBBB /* UIApplication+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LazyTheme.h"; sourceTree = "<group>"; };
+		99D9033F1DA77CED0099BBBB /* UIApplication+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LazyTheme.m"; sourceTree = "<group>"; };
+		99D903401DA77CED0099BBBB /* UIView+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LazyTheme.h"; sourceTree = "<group>"; };
+		99D903411DA77CED0099BBBB /* UIView+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LazyTheme.m"; sourceTree = "<group>"; };
+		99D903421DA77CED0099BBBB /* UIViewController+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LazyTheme.h"; sourceTree = "<group>"; };
+		99D903431DA77CED0099BBBB /* UIViewController+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LazyTheme.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		994C458D1D90E58C00606260 = {
 			isa = PBXGroup;
 			children = (
-				996123071DA2505500C24DDC /* LazyTheme */,
+				99D903311DA77CED0099BBBB /* LazyTheme */,
 				994C45981D90E58C00606260 /* LazyThemeDemo */,
 				994C45971D90E58C00606260 /* Products */,
 			);
@@ -110,27 +110,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		996123071DA2505500C24DDC /* LazyTheme */ = {
+		99D903311DA77CED0099BBBB /* LazyTheme */ = {
 			isa = PBXGroup;
 			children = (
-				996123081DA2505500C24DDC /* LazyTheme.h */,
-				996123091DA2505500C24DDC /* LTDefs.h */,
-				99D9032E1DA775C60099BBBB /* LTRuntime.h */,
-				99D9032F1DA775C60099BBBB /* LTRuntime.m */,
-				9961230A1DA2505500C24DDC /* LTTheme.h */,
-				9961230B1DA2505500C24DDC /* LTTheme.m */,
-				9961230C1DA2505500C24DDC /* LTThemeAttributesMaker.h */,
-				9961230D1DA2505500C24DDC /* LTThemeAttributesMaker.m */,
-				9961230E1DA2505500C24DDC /* LTThemeManager.h */,
-				9961230F1DA2505500C24DDC /* LTThemeManager.m */,
-				996123101DA2505500C24DDC /* UIApplication+LazyTheme.h */,
-				996123111DA2505500C24DDC /* UIApplication+LazyTheme.m */,
-				996123121DA2505500C24DDC /* UIView+LazyTheme.h */,
-				996123131DA2505500C24DDC /* UIView+LazyTheme.m */,
-				996123141DA2505500C24DDC /* UIViewController+LazyTheme.h */,
-				996123151DA2505500C24DDC /* UIViewController+LazyTheme.m */,
-				9961231C1DA2523A00C24DDC /* AppDelegate+LazyTheme.h */,
-				9961231D1DA2523A00C24DDC /* AppDelegate+LazyTheme.m */,
+				99D903321DA77CED0099BBBB /* AppDelegate+LazyTheme.h */,
+				99D903331DA77CED0099BBBB /* AppDelegate+LazyTheme.m */,
+				99D903341DA77CED0099BBBB /* LazyTheme.h */,
+				99D903351DA77CED0099BBBB /* LTDefs.h */,
+				99D903361DA77CED0099BBBB /* LTRuntime.h */,
+				99D903371DA77CED0099BBBB /* LTRuntime.m */,
+				99D903381DA77CED0099BBBB /* LTTheme.h */,
+				99D903391DA77CED0099BBBB /* LTTheme.m */,
+				99D9033A1DA77CED0099BBBB /* LTThemeAttributesMaker.h */,
+				99D9033B1DA77CED0099BBBB /* LTThemeAttributesMaker.m */,
+				99D9033C1DA77CED0099BBBB /* LTThemeManager.h */,
+				99D9033D1DA77CED0099BBBB /* LTThemeManager.m */,
+				99D9033E1DA77CED0099BBBB /* UIApplication+LazyTheme.h */,
+				99D9033F1DA77CED0099BBBB /* UIApplication+LazyTheme.m */,
+				99D903401DA77CED0099BBBB /* UIView+LazyTheme.h */,
+				99D903411DA77CED0099BBBB /* UIView+LazyTheme.m */,
+				99D903421DA77CED0099BBBB /* UIViewController+LazyTheme.h */,
+				99D903431DA77CED0099BBBB /* UIViewController+LazyTheme.m */,
 			);
 			path = LazyTheme;
 			sourceTree = "<group>";
@@ -207,17 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D903451DA77CED0099BBBB /* LTRuntime.m in Sources */,
+				99D903481DA77CED0099BBBB /* LTThemeManager.m in Sources */,
+				99D9034B1DA77CED0099BBBB /* UIViewController+LazyTheme.m in Sources */,
+				99D903441DA77CED0099BBBB /* AppDelegate+LazyTheme.m in Sources */,
 				994C45A11D90E58C00606260 /* ViewController.m in Sources */,
-				996123181DA2505500C24DDC /* LTThemeManager.m in Sources */,
-				99D903301DA775C60099BBBB /* LTRuntime.m in Sources */,
-				9961231E1DA2523A00C24DDC /* AppDelegate+LazyTheme.m in Sources */,
-				9961231B1DA2505500C24DDC /* UIViewController+LazyTheme.m in Sources */,
-				996123191DA2505500C24DDC /* UIApplication+LazyTheme.m in Sources */,
-				996123171DA2505500C24DDC /* LTThemeAttributesMaker.m in Sources */,
-				9961231A1DA2505500C24DDC /* UIView+LazyTheme.m in Sources */,
+				99D9034A1DA77CED0099BBBB /* UIView+LazyTheme.m in Sources */,
+				99D903491DA77CED0099BBBB /* UIApplication+LazyTheme.m in Sources */,
+				99D903461DA77CED0099BBBB /* LTTheme.m in Sources */,
 				994C459E1D90E58C00606260 /* AppDelegate.m in Sources */,
 				994C459B1D90E58C00606260 /* main.m in Sources */,
-				996123161DA2505500C24DDC /* LTTheme.m in Sources */,
+				99D903471DA77CED0099BBBB /* LTThemeAttributesMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
