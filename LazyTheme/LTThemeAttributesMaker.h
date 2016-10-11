@@ -25,6 +25,7 @@
 @property (nonatomic, strong) UIFont  *titleFont;
 // Navi Bar
 @property (nonatomic, strong) UIColor *barTintColor;
+@property (nonatomic, strong) NSDictionary *barTitleAttributes;
 
 - (instancetype)initWithView:(UIView *)view;
 

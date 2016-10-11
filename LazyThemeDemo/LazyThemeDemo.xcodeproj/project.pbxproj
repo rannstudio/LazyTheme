@@ -13,6 +13,8 @@
 		994C45A41D90E58C00606260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994C45A21D90E58C00606260 /* Main.storyboard */; };
 		994C45A61D90E58C00606260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994C45A51D90E58C00606260 /* Assets.xcassets */; };
 		994C45A91D90E58C00606260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994C45A71D90E58C00606260 /* LaunchScreen.storyboard */; };
+		997C02561DABA1DB003739E3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997C02551DABA1DB003739E3 /* DetailViewController.m */; };
+		997C025A1DABA359003739E3 /* LTThemePannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 997C02591DABA359003739E3 /* LTThemePannel.m */; };
 		9989D99D1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989D98C1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.m */; };
 		9989D99E1DA77EDC00CE6C9A /* LTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989D9901DA77EDC00CE6C9A /* LTRuntime.m */; };
 		9989D99F1DA77EDC00CE6C9A /* LTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989D9921DA77EDC00CE6C9A /* LTTheme.m */; };
@@ -36,6 +38,10 @@
 		994C45AA1D90E58C00606260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99533ADF1D957FD70011E67A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		99533AE21D95810A0011E67A /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		997C02541DABA1DB003739E3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		997C02551DABA1DB003739E3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		997C02581DABA359003739E3 /* LTThemePannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTThemePannel.h; sourceTree = "<group>"; };
+		997C02591DABA359003739E3 /* LTThemePannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTThemePannel.m; sourceTree = "<group>"; };
 		9989D98B1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LazyTheme.h"; sourceTree = "<group>"; };
 		9989D98C1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LazyTheme.m"; sourceTree = "<group>"; };
 		9989D98D1DA77EDC00CE6C9A /* LazyTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyTheme.h; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 				994C459D1D90E58C00606260 /* AppDelegate.m */,
 				994C459F1D90E58C00606260 /* ViewController.h */,
 				994C45A01D90E58C00606260 /* ViewController.m */,
+				997C02541DABA1DB003739E3 /* DetailViewController.h */,
+				997C02551DABA1DB003739E3 /* DetailViewController.m */,
 				994C45991D90E58C00606260 /* Supporting Files */,
 			);
 			path = LazyThemeDemo;
@@ -113,8 +121,6 @@
 		9989D98A1DA77EDC00CE6C9A /* LazyTheme */ = {
 			isa = PBXGroup;
 			children = (
-				9989D98B1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.h */,
-				9989D98C1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.m */,
 				9989D98D1DA77EDC00CE6C9A /* LazyTheme.h */,
 				9989D98E1DA77EDC00CE6C9A /* LTDefs.h */,
 				9989D98F1DA77EDC00CE6C9A /* LTRuntime.h */,
@@ -131,6 +137,10 @@
 				9989D99A1DA77EDC00CE6C9A /* UIView+LazyTheme.m */,
 				9989D99B1DA77EDC00CE6C9A /* UIViewController+LazyTheme.h */,
 				9989D99C1DA77EDC00CE6C9A /* UIViewController+LazyTheme.m */,
+				9989D98B1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.h */,
+				9989D98C1DA77EDC00CE6C9A /* AppDelegate+LazyTheme.m */,
+				997C02581DABA359003739E3 /* LTThemePannel.h */,
+				997C02591DABA359003739E3 /* LTThemePannel.m */,
 			);
 			name = LazyTheme;
 			path = ../LazyTheme;
@@ -215,10 +225,12 @@
 				994C45A11D90E58C00606260 /* ViewController.m in Sources */,
 				9989D9A31DA77EDC00CE6C9A /* UIView+LazyTheme.m in Sources */,
 				9989D9A21DA77EDC00CE6C9A /* UIApplication+LazyTheme.m in Sources */,
+				997C025A1DABA359003739E3 /* LTThemePannel.m in Sources */,
 				9989D99F1DA77EDC00CE6C9A /* LTTheme.m in Sources */,
 				994C459E1D90E58C00606260 /* AppDelegate.m in Sources */,
 				994C459B1D90E58C00606260 /* main.m in Sources */,
 				9989D9A01DA77EDC00CE6C9A /* LTThemeAttributesMaker.m in Sources */,
+				997C02561DABA1DB003739E3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

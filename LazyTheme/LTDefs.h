@@ -17,5 +17,4 @@
 #define LTLog(...)
 #endif
 
-
 #endif /* LTDefs_h */

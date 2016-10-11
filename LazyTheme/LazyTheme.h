@@ -12,5 +12,6 @@
 #import "LTThemeManager.h"
 #import "LTTheme.h"
 #import "UIView+LazyTheme.h"
+#import "LTThemePannel.h"
 
 #endif /* LazyTheme_h */

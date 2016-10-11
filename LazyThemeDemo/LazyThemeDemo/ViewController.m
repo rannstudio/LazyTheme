@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,7 @@
     [self.navigationController.navigationBar lt_makeThemeAttributes:^(LTTheme *theme, LTThemeAttributesMaker *maker) {
         maker.barTintColor = COLOR_WITH_HEX(theme.globalThemeColor);
         maker.tintColor = COLOR_WITH_HEX(theme.globalBackgroundColor);
+        maker.barTitleAttributes = @{NSForegroundColorAttributeName:COLOR_WITH_HEX(theme.globalBackgroundColor)};
     }];
     
     CGPoint center = self.view.center;
@@ -42,10 +44,16 @@
     button.center = CGPointMake(center.x, center.y + 40);
     [button setTitle:@"I'm a button" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(onPushBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [button lt_makeThemeAttributes:^(LTTheme *theme, LTThemeAttributesMaker *maker) {
         maker.backgroundColor = COLOR_WITH_HEX(theme.globalThemeColor);
     }];
     [self.view addSubview:button];
+}
+
+- (void)onPushBtnClicked:(id)sender {
+    DetailViewController *detailVC = [[DetailViewController alloc] init];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

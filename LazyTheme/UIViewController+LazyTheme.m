@@ -56,13 +56,30 @@ static void * kLTCurrentThemeKey = &kLTCurrentThemeKey;
         return;
     }
     
-    if (self.parentViewController) {
+    if (self.parentViewController &&
+        self.parentViewController != self.navigationController &&
+        self.parentViewController != self.tabBarController)
+    {
         [self.parentViewController lt_modifyTheme];
         self.lt_currentTheme = currentTheme;
         return;
     }
     
-    UIView *modView = self.view;
+    UIView *modView = nil;
+    if ([self isKindOfClass:UINavigationController.class])
+    {
+        UINavigationController *naviVC = (UINavigationController *)self;
+        modView = naviVC.navigationBar;
+    }
+    else if ([self isKindOfClass:UITabBarController.class])
+    {
+        UITabBarController *tabbarVC = (UITabBarController *)self;
+        modView = tabbarVC.tabBar;
+    }
+    else
+    {
+        modView = self.view;
+    }
     
     [self lt_enumerateSubviews:modView usingBlock:^(UIView *subview) {
         if (subview.isLazyThemeComponent) {
