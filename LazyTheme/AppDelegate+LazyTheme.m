@@ -28,15 +28,25 @@
 - (void)setupTheme {
     LTTheme *theme = [[LTTheme alloc] init];
     theme.themeName = @"Green";
-    theme.globalBackgroundColor = 0xF5F5F9;
-    theme.globalThemeColor = 0x29AB91;
+    theme.globalBackgroundColor = 0xF5F6F9;
+    theme.globalThemeColor = 0x388E3C;
     
     LTTheme *theme_orange = [[LTTheme alloc] init];
     theme_orange.themeName = @"Orange";
-    theme_orange.globalBackgroundColor = 0xF5F5F9;
-    theme_orange.globalThemeColor = 0xFFB415;
+    theme_orange.globalBackgroundColor = 0xF5F6F9;
+    theme_orange.globalThemeColor = 0xFF8F00;
     
-    [[LTThemeManager sharedManager] setupThemes:@[theme, theme_orange]];
+    LTTheme *theme_blue = [[LTTheme alloc] init];
+    theme_blue.themeName = @"Blue";
+    theme_blue.globalBackgroundColor = 0xF5F6F9;
+    theme_blue.globalThemeColor = 0x039BE5;
+    
+    LTTheme *theme_red = [[LTTheme alloc] init];
+    theme_red.themeName = @"Red";
+    theme_red.globalBackgroundColor = 0xF5F6F9;
+    theme_red.globalThemeColor = 0xE57373;
+    
+    [[LTThemeManager sharedManager] setupThemes:@[theme, theme_orange, theme_blue, theme_red]];
 }
 
 @end
