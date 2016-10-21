@@ -6,26 +6,21 @@
 //  Copyright © 2016年 rannie. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "DetailViewController.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Home";
     
-    self.title = @"Lazy Theme";
     [self.view lt_makeThemeAttributes:^(LTTheme *theme, LTThemeAttributesMaker *maker) {
         maker.backgroundColor = COLOR_WITH_HEX(theme.globalBackgroundColor);
-    }];
-    [self.navigationController.navigationBar lt_makeThemeAttributes:^(LTTheme *theme, LTThemeAttributesMaker *maker) {
-        maker.barTintColor = COLOR_WITH_HEX(theme.globalThemeColor);
-        maker.tintColor = COLOR_WITH_HEX(theme.globalBackgroundColor);
-        maker.barTitleAttributes = @{NSForegroundColorAttributeName:COLOR_WITH_HEX(theme.globalBackgroundColor)};
     }];
     
     CGPoint center = self.view.center;

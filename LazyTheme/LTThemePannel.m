@@ -26,7 +26,7 @@
 }
 
 - (instancetype)initPannel {
-    self = [super initWithFrame:CGRectMake(20, 20, 44, 44)];
+    self = [super initWithFrame:CGRectMake(20, 20, 30, 30)];
     if (self) {
         self.windowLevel = UIWindowLevelStatusBar - 1;
         self.backgroundColor = [UIColor clearColor];
@@ -34,8 +34,8 @@
         UIButton *showBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [showBtn setBackgroundColor:[UIColor orangeColor]];
         [showBtn setTitle:@"LT" forState:UIControlStateNormal];
-        showBtn.frame = CGRectMake(0, 0, 50, 50);
-        showBtn.layer.cornerRadius = 25;
+        showBtn.frame = CGRectMake(0, 0, 30, 30);
+        showBtn.layer.cornerRadius = 15;
         [showBtn addTarget:self action:@selector(onPannelButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:showBtn];
         
